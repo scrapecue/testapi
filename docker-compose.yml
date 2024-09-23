@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  api:
+    build: .
+    ports:
+      - 8455:8455
+
+networks:
+  api_test:
+    ipam:
+     config:
+      - subnet: 173.42.0.0/16
